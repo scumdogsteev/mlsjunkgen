@@ -106,21 +106,21 @@ mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 8)
 #> 10 0.7027079
 ```
 
-The same expample with default rounding:
+The same example with default rounding:
 
 ``` r
-mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 8)
-#>           RN
-#> 1  0.9551644
-#> 2  0.6690774
-#> 3  0.2123540
-#> 4  0.3448801
-#> 5  0.1199463
-#> 6  0.5639798
-#> 7  0.5923515
-#> 8  0.1143156
-#> 9  0.3352500
-#> 10 0.7027079
+mlsjunkgend(n = 10, w = w, x = x, y = y, z = z)
+#>         RN
+#> 1  0.95516
+#> 2  0.66908
+#> 3  0.21235
+#> 4  0.34488
+#> 5  0.11995
+#> 6  0.56398
+#> 7  0.59235
+#> 8  0.11432
+#> 9  0.33525
+#> 10 0.70271
 ```
 
 **`mlsjunkgenm`** generates a matrix of user-specified size containing a stream of random numbers based on four user-specified seeds:

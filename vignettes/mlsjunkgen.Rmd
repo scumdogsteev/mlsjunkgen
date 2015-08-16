@@ -102,10 +102,10 @@ pseudo-random numbers based on four user-specified seeds:
 mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 8)
 ```
 
-The same expample with default rounding:
+The same example with default rounding:
 
 ```{r mlsjunkgend 2}
-mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 8)
+mlsjunkgend(n = 10, w = w, x = x, y = y, z = z)
 ```
 
 **`mlsjunkgenm`** generates a matrix of user-specified size containing a stream 
