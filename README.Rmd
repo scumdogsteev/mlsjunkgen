@@ -115,7 +115,7 @@ to a specified (default = 5) number of decimal places:
 mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z, round = 8)
 ```
 
-The same expample with default rounding:
+The same example with default rounding:
 
 ```{r mlsjunkgenv 2}
 mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z)

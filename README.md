@@ -81,7 +81,7 @@ mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z, round = 8)
 #>  [8] 0.1143156 0.3352500 0.7027079
 ```
 
-The same expample with default rounding:
+The same example with default rounding:
 
 ``` r
 mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z)

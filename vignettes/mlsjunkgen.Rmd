@@ -16,7 +16,7 @@ Simulation](http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000
 at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes where we spent a lot 
 of time on the generation and analysis of random numbers.  Here is a simple-yet-powerful 
 pseudo-random number generator that I learned about in that course.  It is 
-named “The MLS Junk Generator” after [Dr. Milton L. Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
+named "The MLS Junk Generator"" after [Dr. Milton L. Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
 
 I have also released [an Excel/VBA implementation](https://github.com/scumdogsteev/mls-junk-generator) and provided 
 [the simple R code](https://github.com/scumdogsteev/mls-junk-generatR) used as 
@@ -43,7 +43,14 @@ z = r<sub>i</sub>
 
 #### Analysis
 
-This generator tends to do well with various tests for randomness (K-S, Chi Square, test for runs up and down).  It may not perform as well on other tests (e.g., tests for runs above and below the mean), but that could relate to my choice of seeds.  As a point of reference, the period of Excel’s built-in random number generator is 16,777,216 (at least in Excel 2003; the algorithm may have changed in Excel 2007 or 2010 [Edit: this seems to still be the period of Excel’s RNG.]) and the MLS Junk Generator’s period is something greater than 9.9 billion
+This generator tends to do well with various tests for randomness (K-S, Chi 
+Square, test for runs up and down).  It may not perform as well on other tests 
+(e.g., tests for runs above and below the mean), but that could relate to my 
+choice of seeds.  As a point of reference, the period of Excel's built-in random 
+number generator is 16,777,216 (at least in Excel 2003; the algorithm may have 
+changed in Excel 2007 or 2010 [Edit: this seems to still be the period of 
+Excel's RNG.]) and the MLS Junk Generator's period is something greater than 9.9 
+billion
 
 ### Usage
 
@@ -82,7 +89,7 @@ to a specified (default = 5) number of decimal places:
 mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z, round = 8)
 ```
 
-The same expample with default rounding:
+The same example with default rounding:
 
 ```{r mlsjunkgenv 2}
 mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z)
