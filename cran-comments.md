@@ -1,3 +1,7 @@
+## Resubmission
+
+This is a resubmission to fix a typo in the package vignette.
+
 ## Test environments
 * local Windows 8.1 64-bit, R 3.2.2
 * win-builder (devel and release)
