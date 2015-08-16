@@ -20,21 +20,21 @@ I have also released [an Excel/VBA implementation](https://github.com/scumdogste
 
 #### Algorithm
 
-For any seed values of `w`, `x`, `y`, `z`:
+For any seed values of w, x, y, z:
 
-`r`<sub>i</sub> = 5.980217`w`<sup>2</sup> + 9.446377`x`<sup>0.25</sup> + 4.81379`y`<sup>0.33</sup> + 8.91197`z`<sup>0.5</sup>
+r<sub>i</sub> = 5.980217w<sup>2</sup> + 9.446377x<sup>0.25</sup> + 4.81379y<sup>0.33</sup> + 8.91197z<sup>0.5</sup>
 
-`r`<sub>i</sub> = `r`<sub>i</sub> - Int(`r`<sub>i</sub>)
+r<sub>i</sub> = r<sub>i</sub> - Int(r<sub>i</sub>)
 
-For `r`<sub>i</sub>+1:
+For r<sub>i</sub>+1:
 
-    `w` = `x`  
+    w = x  
 
-    `x` = `y`  
+    x = y  
 
-    `y` = `z`  
+    y = z  
 
-    `z` = `r`<sub>i</sub>
+    z = r<sub>i</sub>
 
 #### Analysis
 
