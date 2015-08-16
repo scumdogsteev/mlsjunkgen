@@ -14,24 +14,31 @@ License: MIT license
 
 ### Background
 
-I took a course in graduate school ("[Statistical Analysis for Digital Simulation](http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000)") at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes where we spent a lot of time on the generation and analysis of random numbers. Here is a simple-yet-powerful pseudo-random number generator that I learned about in that course. It is named âThe MLS Junk Generatorâ after [Dr. Milton L. Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
+I took a course in graduate school ("[Statistical Analysis for Digital Simulation](http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000)") at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes where we spent a lot of time on the generation and analysis of random numbers. Here is a simple-yet-powerful pseudo-random number generator that I learned about in that course. It is named "The MLS Junk Generator" after [Dr. Milton L. Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
 
 I have also released [an Excel/VBA implementation](https://github.com/scumdogsteev/mls-junk-generator) and provided [the simple R code](https://github.com/scumdogsteev/mls-junk-generatR) used as the basis for this package.
 
 #### Algorithm
 
-For any seed values of `w`, `x`, `y`, `z`: `r`<sub>i</sub> = 5.980217`w`<sup>2</sup> + 9.446377`x`<sup>0.25</sup> + 4.81379`y`<sup>0.33</sup> + 8.91197`z`<sup>0.5</sup>
+For any seed values of `w`, `x`, `y`, `z`:
+
+`r`<sub>i</sub> = 5.980217`w`<sup>2</sup> + 9.446377`x`<sup>0.25</sup> + 4.81379`y`<sup>0.33</sup> + 8.91197`z`<sup>0.5</sup>
+
 `r`<sub>i</sub> = `r`<sub>i</sub> - Int(`r`<sub>i</sub>)
 
 For `r`<sub>i</sub>+1:
- `w` = `x`
- `x` = `y`
- `y` = `z`
- `z` = `r`<sub>i</sub>
+
+    `w` = `x`  
+
+    `x` = `y`  
+
+    `y` = `z`  
+
+    `z` = `r`<sub>i</sub>
 
 #### Analysis
 
-This generator tends to do well with various tests for randomness (K-S, Chi Square, test for runs up and down). It may not perform as well on other tests (e.g., tests for runs above and below the mean), but that could relate to my choice of seeds. As a point of reference, the period of Excelâs built-in random number generator is 16,777,216 and the MLS Junk Generatorâs period is something greater than 9.9 billion (the point at which I gave up on trying to determine it).
+This generator tends to do well with various tests for randomness (K-S, Chi Square, test for runs up and down). It may not perform as well on other tests (e.g., tests for runs above and below the mean), but that could relate to my choice of seeds. As a point of reference, the period of Excel's built-in random number generator is 16,777,216 and the MLS Junk Generator's period is something greater than 9.9 billion (the point at which I gave up on trying to determine it).
 
 ### Installation
 
