@@ -48,15 +48,15 @@ r<sub>i</sub> = 5.980217w<sup>2</sup> + 9.446377x<sup>0.25</sup> +
 
 r<sub>i</sub> = r<sub>i</sub> - Int(r<sub>i</sub>)   
 
-For r<sub>i</sub>+1:  
+For r<sub>i</sub>+1:
 
-    w = x  
+w = x  
     
-    x = y  
+x = y  
     
-    y = z  
+y = z  
     
-    z = r<sub>i</sub>
+z = r<sub>i</sub>
 
 #### Analysis
 
