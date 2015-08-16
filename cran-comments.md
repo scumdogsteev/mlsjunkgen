@@ -8,6 +8,7 @@ There were no ERRORs or WARNINGs.
 There were 2 NOTEs:
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: 'Steve Myles <steve@mylesandmyles.info>'
+New submission
 
 License components with restrictions and base license permitting such:
   MIT + file LICENSE
