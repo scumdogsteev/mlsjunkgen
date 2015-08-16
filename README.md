@@ -42,7 +42,14 @@ This generator tends to do well with various tests for randomness (K-S, Chi Squa
 
 ### Installation
 
--   You can install `mlsjunkgen` from GitHub using the `devtools` package:
+-   `mlsjunkgen` is available [on CRAN](http://cran.r-project.org/web/packages/mlsjunkgen/index.html) and can be installed accordingly:
+
+    ``` r
+    install.packages("mlsjunkgen")
+    library(mlsjunkgen)
+    ```
+
+-   You can also install `mlsjunkgen` from GitHub using the `devtools` package:
 
     ``` r
     install.packages("devtools")
