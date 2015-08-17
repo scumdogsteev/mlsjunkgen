@@ -130,7 +130,7 @@ mlsjunkgend(n = 10, w = w, x = x, y = y, z = z)
 #> 10 0.70271
 ```
 
-**`mlsjunkgenm`** generates a matrix of user-specified size containing a stream of random numbers based on four user-specified seeds:
+**`mlsjunkgenm`** generates a matrix of user-specified size containing a stream of pseudo-random numbers based on four user-specified seeds:
 
 ``` r
 mlsjunkgenm(nrow = 5, ncol = 5, w = w, x = x, y = y, z = z, round = 3)
