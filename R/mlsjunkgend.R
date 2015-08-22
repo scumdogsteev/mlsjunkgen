@@ -33,7 +33,7 @@
 #' # using the default value of n (1) is identical to assigning the rounded result of 
 #' # junkgen to a data frame of 1 observation
 #' 
-#' junkgen(w = w, x = x, y = y, z = z) # returns "[1] 0.9551644"  
+#' round(junkgen(w = w, x = x, y = y, z = z), 5) # returns "[1] 0.95516"  
 #' mlsjunkgend(w = w, x = x, y = y, z = z) 
 #' # returns the following:
 #' #        RN

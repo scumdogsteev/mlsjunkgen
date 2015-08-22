@@ -36,7 +36,7 @@
 #' # using the default value of n (1) generates a 1x1 matrix the value of which 
 #' # is identical to running junkgen and rounding the result to 5 decimal places
 #' 
-#' junkgen(w = w, x = x, y = y, z = z) # returns "[1] 0.9551644"  
+#' round(junkgen(w = w, x = x, y = y, z = z), 5) # returns "[1] 0.95516"  
 #' mlsjunkgenv(w = w, x = x, y = y, z = z) # returns a 1x1 matrix with single element = "0.95516"
 #' 
 #' @return A numeric vector containing a single pseudo-random number

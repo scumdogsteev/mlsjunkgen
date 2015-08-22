@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/mlsjunkgen.svg?branch=master)](https://travis-ci.org/scumdogsteev/mlsjunkgen) [![Coverage Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/r/mlsjunkgen/mlsjunkgen?branch=master)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/mlsjunkgen.svg?branch=master)](https://travis-ci.org/scumdogsteev/mlsjunkgen) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/v083txy50uqi8t3e?svg=true)](https://ci.appveyor.com/project/scumdogsteev/mlsjunkgen) [![Coverage Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/r/mlsjunkgen/mlsjunkgen?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](http://cran.rstudio.com/web/packages/mlsjunkgen/index.html)
 
 # mlsjunkgen
 
@@ -30,12 +30,14 @@ License:  MIT license
 
 I took a course in graduate school ("[Statistical Analysis for Digital 
 Simulation](http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000)") 
-at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes where we spent a lot 
-of time on the generation and analysis of random numbers.  Here is a simple-yet-powerful 
-pseudo-random number generator that I learned about in that course.  It is 
-named "The MLS Junk Generator" after [Dr. Milton L. Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
+at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes in which we spent a 
+lot of time on the generation and analysis of random numbers.  Here is a 
+simple-yet-powerful pseudo-random number generator that I learned about in that 
+course.  It is named "The MLS Junk Generator" after [Dr. Milton L. 
+Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
 
-I have also released [an Excel/VBA implementation](https://github.com/scumdogsteev/mls-junk-generator) and provided 
+I have also released [an Excel/VBA 
+implementation](https://github.com/scumdogsteev/mls-junk-generator) and provided 
 [the simple R code](https://github.com/scumdogsteev/mls-junk-generatR) used as 
 the basis for this package.
 
@@ -118,7 +120,7 @@ user-specified pseudo-random numbers based on four user-specified seeds rounded
 to a specified (default = 5) number of decimal places:
 
 ```{r mlsjunkgenv 1}
-mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z, round = 8)
+mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z, round = 2)
 ```
 
 The same example with default rounding:
@@ -131,7 +133,7 @@ mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z)
 pseudo-random numbers based on four user-specified seeds:
 
 ```{r mlsjunkgend 1}
-mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 8)
+mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 2)
 ```
 
 The same example with default rounding:

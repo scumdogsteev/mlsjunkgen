@@ -13,10 +13,11 @@ vignette: >
 
 I took a course in graduate school ("[Statistical Analysis for Digital 
 Simulation](http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000)") 
-at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes where we spent a lot 
-of time on the generation and analysis of random numbers.  Here is a simple-yet-powerful 
-pseudo-random number generator that I learned about in that course.  It is 
-named "The MLS Junk Generator"" after [Dr. Milton L. Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
+at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes in which we spent a 
+lot of time on the generation and analysis of random numbers.  Here is a 
+simple-yet-powerful pseudo-random number generator that I learned about in that 
+course.  It is named "The MLS Junk Generator"" after [Dr. Milton L. 
+Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
 
 I have also released [an Excel/VBA implementation](https://github.com/scumdogsteev/mls-junk-generator) and provided 
 [the simple R code](https://github.com/scumdogsteev/mls-junk-generatR) used as 
