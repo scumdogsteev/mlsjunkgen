@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/mlsjunkgen.svg?branch=master)](https://travis-ci.org/scumdogsteev/mlsjunkgen) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/v083txy50uqi8t3e?svg=true)](https://ci.appveyor.com/project/scumdogsteev/mlsjunkgen) [![Coverage Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/r/mlsjunkgen/mlsjunkgen?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](http://cran.rstudio.com/web/packages/mlsjunkgen/index.html)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/mlsjunkgen.svg?branch=master)](https://travis-ci.org/scumdogsteev/mlsjunkgen) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/v083txy50uqi8t3e?svg=true)](https://ci.appveyor.com/project/scumdogsteev/mlsjunkgen) [![Coverage Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/r/scumdogsteev/mlsjunkgen?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](http://cran.rstudio.com/web/packages/mlsjunkgen/index.html)
 
 # mlsjunkgen
 
