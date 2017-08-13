@@ -9,7 +9,9 @@ mlsjunkgen
 
 Author: Steve Myles
 
-Project Home: <http://steve.mylesandmyles.info/projects/mls-junk-generator/> Package Home: <http://s.mylesandmyles.info/mlsjunkgen/>
+Project Home: <http://steve.mylesandmyles.info/projects/mls-junk-generator/
+
+Package Home: <http://s.mylesandmyles.info/mlsjunkgen/>
 
 License: MIT license
 
