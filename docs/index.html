@@ -73,7 +73,6 @@
     
     
 <div class="contents">
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <div id="mlsjunkgen" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
@@ -119,73 +118,6 @@
 <span class="kw">library</span>(mlsjunkgen)</code></pre></div>
 </li>
 </ul>
-</div>
-<div id="usage" class="section level3">
-<h3 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h3>
-<p>The package consists of four functions:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>junkgen</code> - generates a pseudo-random number from user-specified seeds</li>
-<li>
-<code>mlsjunkgenv</code> - generates a vector of pseudo-random numbers by calling <code>junkgen</code> a user-specified number of times</li>
-<li>
-<code>mlsjunkgend</code> - generates a data frame of pseudo-random numbers by calling <code>junkgen</code> a user-specified number of times</li>
-<li>
-<code>mlsjunkgenm</code> - generates a user-specified size matrix of pseudo-random numbers by calling <code>mlsjunkgenv</code> and assigning the results to a matrix</li>
-</ol>
-<div id="examples" class="section level4">
-<h4 class="hasAnchor">
-<a href="#examples" class="anchor"></a>Examples</h4>
-<p><strong><code>junkgen</code></strong> generates a single pseudo-random number based on four user-specified seeds:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">w &lt;-<span class="st"> </span><span class="dv">1</span>
-x &lt;-<span class="st"> </span><span class="dv">2</span>
-y &lt;-<span class="st"> </span><span class="dv">3</span>
-z &lt;-<span class="st"> </span><span class="dv">4</span>
-<span class="kw"><a href="reference/junkgen.html">junkgen</a></span>(<span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z)
-<span class="co">#&gt; [1] 0.9551644</span></code></pre></div>
-<p><strong><code>mlsjunkgenv</code></strong> generates a vector containing a stream of <code>n</code> (default = 1) user-specified pseudo-random numbers based on four user-specified seeds rounded to a specified (default = 5) number of decimal places:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/mlsjunkgenv.html">mlsjunkgenv</a></span>(<span class="dt">n =</span> <span class="dv">10</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z, <span class="dt">round =</span> <span class="dv">2</span>)
-<span class="co">#&gt;  [1] 0.96 0.67 0.21 0.34 0.12 0.56 0.59 0.11 0.34 0.70</span></code></pre></div>
-<p>The same example with default rounding:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/mlsjunkgenv.html">mlsjunkgenv</a></span>(<span class="dt">n =</span> <span class="dv">10</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z)
-<span class="co">#&gt;  [1] 0.95516 0.66908 0.21235 0.34488 0.11995 0.56398 0.59235 0.11432</span>
-<span class="co">#&gt;  [9] 0.33525 0.70271</span></code></pre></div>
-<p><strong><code>mlsjunkgend</code></strong> generates a data frame containing a stream of <code>n</code> user-specified pseudo-random numbers based on four user-specified seeds:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/mlsjunkgend.html">mlsjunkgend</a></span>(<span class="dt">n =</span> <span class="dv">10</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z, <span class="dt">round =</span> <span class="dv">2</span>)
-<span class="co">#&gt;      RN</span>
-<span class="co">#&gt; 1  0.96</span>
-<span class="co">#&gt; 2  0.67</span>
-<span class="co">#&gt; 3  0.21</span>
-<span class="co">#&gt; 4  0.34</span>
-<span class="co">#&gt; 5  0.12</span>
-<span class="co">#&gt; 6  0.56</span>
-<span class="co">#&gt; 7  0.59</span>
-<span class="co">#&gt; 8  0.11</span>
-<span class="co">#&gt; 9  0.34</span>
-<span class="co">#&gt; 10 0.70</span></code></pre></div>
-<p>The same example with default rounding:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/mlsjunkgend.html">mlsjunkgend</a></span>(<span class="dt">n =</span> <span class="dv">10</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z)
-<span class="co">#&gt;         RN</span>
-<span class="co">#&gt; 1  0.95516</span>
-<span class="co">#&gt; 2  0.66908</span>
-<span class="co">#&gt; 3  0.21235</span>
-<span class="co">#&gt; 4  0.34488</span>
-<span class="co">#&gt; 5  0.11995</span>
-<span class="co">#&gt; 6  0.56398</span>
-<span class="co">#&gt; 7  0.59235</span>
-<span class="co">#&gt; 8  0.11432</span>
-<span class="co">#&gt; 9  0.33525</span>
-<span class="co">#&gt; 10 0.70271</span></code></pre></div>
-<p><strong><code>mlsjunkgenm</code></strong> generates a matrix of user-specified size containing a stream of pseudo-random numbers based on four user-specified seeds:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/mlsjunkgenm.html">mlsjunkgenm</a></span>(<span class="dt">nrow =</span> <span class="dv">5</span>, <span class="dt">ncol =</span> <span class="dv">5</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z, <span class="dt">round =</span> <span class="dv">3</span>)
-<span class="co">#&gt;       [,1]  [,2]  [,3]  [,4]  [,5]</span>
-<span class="co">#&gt; [1,] 0.955 0.564 0.418 0.052 0.020</span>
-<span class="co">#&gt; [2,] 0.669 0.592 0.313 0.663 0.110</span>
-<span class="co">#&gt; [3,] 0.212 0.114 0.920 0.802 0.685</span>
-<span class="co">#&gt; [4,] 0.345 0.335 0.379 0.160 0.286</span>
-<span class="co">#&gt; [5,] 0.120 0.703 0.280 0.586 0.452</span></code></pre></div>
-</div>
 </div>
 </div>
 </div>

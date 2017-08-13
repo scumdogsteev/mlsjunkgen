@@ -3,8 +3,6 @@ output: rmarkdown::github_document
 
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -77,67 +75,4 @@ install.packages("devtools")
 library("devtools")
 install_github("scumdogsteev/mlsjunkgen")
 library(mlsjunkgen)
-```
-
-### Usage
-
-The package consists of four functions:
-
-1. `junkgen` - generates a pseudo-random number from user-specified seeds
-2. `mlsjunkgenv` - generates a vector of pseudo-random numbers by calling 
-   `junkgen` a user-specified number of times
-3. `mlsjunkgend` - generates a data frame of pseudo-random numbers by calling 
-   `junkgen` a user-specified number of times
-4. `mlsjunkgenm` - generates a user-specified size matrix of pseudo-random 
-   numbers by calling `mlsjunkgenv` and assigning the results to a matrix
-   
-#### Examples
-
-```{r library, echo=FALSE}
-library(mlsjunkgen)
-```
-
-**`junkgen`** generates a single pseudo-random number based on four user-specified
-seeds:
-
-```{r junkgen}
-w <- 1
-x <- 2
-y <- 3
-z <- 4
-junkgen(w = w, x = x, y = y, z = z)
-```
-
-**`mlsjunkgenv`** generates a vector containing a stream of `n` (default = 1) 
-user-specified pseudo-random numbers based on four user-specified seeds rounded 
-to a specified (default = 5) number of decimal places:
-
-```{r mlsjunkgenv 1}
-mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z, round = 2)
-```
-
-The same example with default rounding:
-
-```{r mlsjunkgenv 2}
-mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z)
-```
-
-**`mlsjunkgend`** generates a data frame containing a stream of `n` user-specified
-pseudo-random numbers based on four user-specified seeds:
-
-```{r mlsjunkgend 1}
-mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 2)
-```
-
-The same example with default rounding:
-
-```{r mlsjunkgend 2}
-mlsjunkgend(n = 10, w = w, x = x, y = y, z = z)
-```
-
-**`mlsjunkgenm`** generates a matrix of user-specified size containing a stream 
-of pseudo-random numbers based on four user-specified seeds:
-
-```{r mlsjunkgenm}
-mlsjunkgenm(nrow = 5, ncol = 5, w = w, x = x, y = y, z = z, round = 3)
 ```
