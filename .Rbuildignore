@@ -6,3 +6,5 @@
 ^README-.*\.png$
 ^\.travis\.yml$
 ^appveyor\.yml$
+^C:\Users\Myles and Myles\Documents\GitHub\mlsjunkgen\docs$
+^_pkgdown\.yml$

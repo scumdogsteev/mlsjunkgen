@@ -1,3 +1,4 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/mlsjunkgen.svg?branch=master)](https://travis-ci.org/scumdogsteev/mlsjunkgen) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/v083txy50uqi8t3e?svg=true)](https://ci.appveyor.com/project/scumdogsteev/mlsjunkgen) [![Coverage Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/r/scumdogsteev/mlsjunkgen?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](http://cran.rstudio.com/web/packages/mlsjunkgen/index.html)
 
@@ -6,9 +7,9 @@ mlsjunkgen
 
 **`mlsjunkgen`** is an R package that generates pseudo-random numbers using the MLS Junk Generator algorithm (see below).
 
-Author: Steve Myles (<steve@mylesandmyles.info>)
+Author: Steve Myles
 
-Project Home: <http://steve.mylesandmyles.info/projects/mls-junk-generator/>
+Project Home: <http://steve.mylesandmyles.info/projects/mls-junk-generator/> Package Home: <http://s.mylesandmyles.info/mlsjunkgen/>
 
 License: MIT license
 

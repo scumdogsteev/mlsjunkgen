@@ -1,7 +1,7 @@
 ---
 title: "mlsjunkgen"
 author: "Steve Myles"
-date: "`r Sys.Date()`"
+date: 2015-09-07
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{mlsjunkgen}
@@ -9,10 +9,10 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-### Background
+# Background
 
 I took a course in graduate school ("[Statistical Analysis for Digital 
-Simulation](http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000)") 
+Simulation](https://catalog.ttu.edu/preview_course_nopop.php?catoid=2&coid=9253)") 
 at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes in which we spent a 
 lot of time on the generation and analysis of random numbers.  Here is a 
 simple-yet-powerful pseudo-random number generator that I learned about in that 
@@ -23,7 +23,7 @@ I have also released [an Excel/VBA implementation](https://github.com/scumdogste
 [the simple R code](https://github.com/scumdogsteev/mls-junk-generatR) used as 
 the basis for this package.
 
-#### Algorithm
+## Algorithm
 
 For any seed values of w, x, y, z:
 
@@ -42,7 +42,7 @@ y = z
     
 z = r<sub>i</sub>
 
-#### Analysis
+## Analysis
 
 This generator tends to do well with various tests for randomness (K-S, Chi 
 Square, test for runs up and down).  It may not perform as well on other tests 
@@ -53,7 +53,7 @@ changed in Excel 2007 or 2010 [Edit: this seems to still be the period of
 Excel's RNG.]) and the MLS Junk Generator's period is something greater than 9.9 
 billion
 
-### Usage
+# Usage
 
 The package consists of four functions:
 
@@ -65,7 +65,7 @@ The package consists of four functions:
 4. `mlsjunkgenm` - generates a user-specified size matrix of pseudo-random 
    numbers by calling `mlsjunkgenv` and assigning the results to a matrix
    
-#### Examples
+## Examples
 
 ```{r library, echo=FALSE}
 library(mlsjunkgen)

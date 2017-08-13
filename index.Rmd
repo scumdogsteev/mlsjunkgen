@@ -19,13 +19,6 @@ knitr::opts_chunk$set(
 **`mlsjunkgen`** is an R package that generates pseudo-random numbers using the
 MLS Junk Generator algorithm (see below).
 
-Author:  Steve Myles
-
-Project Home:  http://steve.mylesandmyles.info/projects/mls-junk-generator/ 
-Package Home:  http://s.mylesandmyles.info/mlsjunkgen/
-
-License:  MIT license 
-
 ### Background
 
 I took a course in graduate school ("[Statistical Analysis for Digital 
