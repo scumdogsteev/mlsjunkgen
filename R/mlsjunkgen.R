@@ -1,5 +1,5 @@
 #' mlsjunkgen: Use the MLS Junk Generator Algorithm to Generate a Stream of Pseudo-Random Numbers
-#' 
+#'
 #' @section mlsjunkgen functions:
 #' \itemize{
 #'  \item \code{\link{junkgen}}: generate a single pseudo-random number; called by the other functions

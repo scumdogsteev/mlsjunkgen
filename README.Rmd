@@ -12,35 +12,17 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/mlsjunkgen.svg?branch=master)](https://travis-ci.org/scumdogsteev/mlsjunkgen) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/v083txy50uqi8t3e?svg=true)](https://ci.appveyor.com/project/scumdogsteev/mlsjunkgen) [![Coverage Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/r/scumdogsteev/mlsjunkgen?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](http://cran.rstudio.com/web/packages/mlsjunkgen/index.html)
 
-# mlsjunkgen
+# mlsjunkgen <img src="man/figures/logo.png" align="right" height="139" />
 
-**`mlsjunkgen`** is an R package that generates pseudo-random numbers using the
-MLS Junk Generator algorithm (see below).
-
-Author:  Steve Myles
-
-Project Home:  http://steve.mylesandmyles.info/projects/mls-junk-generator/
-
-Package Home:  http://s.mylesandmyles.info/mlsjunkgen/
-
-License:  MIT license 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/scumdogsteev/mlsjunkgen/workflows/R-CMD-check/badge.svg)](https://github.com/scumdogsteev/mlsjunkgen/actions)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/mlsjunkgen)](https://cran.r-project.org/package=mlsjunkgen) [![Coverage Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/github/scumdogsteev/mlsjunkgen) [![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](https://cran.rstudio.com/package=mlsjunkgen)
+<!-- badges: end -->
 
 ### Background
 
-I took a course in graduate school ("[Statistical Analysis for Digital 
-Simulation](http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000)") 
-at [Texas Tech](http://www.ttu.edu/) from Dr. Elliot Montes in which we spent a 
-lot of time on the generation and analysis of random numbers.  Here is a 
-simple-yet-powerful pseudo-random number generator that I learned about in that 
-course.  It is named "The MLS Junk Generator" after [Dr. Milton L. 
-Smith](http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith).
-
-I have also released [an Excel/VBA 
-implementation](https://github.com/scumdogsteev/mls-junk-generator) and provided 
-[the simple R code](https://github.com/scumdogsteev/mls-junk-generatR) used as 
-the basis for this package.
+**`mlsjunkgen`** is a pseudo-random number generator.
 
 #### Algorithm
 
@@ -73,7 +55,7 @@ it).
 
 ### Installation
 
-* `mlsjunkgen` is available [on CRAN](http://cran.r-project.org/web/packages/mlsjunkgen/index.html) and can be
+* `mlsjunkgen` is available [on CRAN](https://cran.r-project.org/package=mlsjunkgen) and can be
 installed accordingly:
 ```r
 install.packages("mlsjunkgen")
