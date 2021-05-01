@@ -10,7 +10,7 @@
 [![Coverage
 Status](https://img.shields.io/coveralls/scumdogsteev/mlsjunkgen.svg)](https://coveralls.io/github/scumdogsteev/mlsjunkgen)
 [![RStudio CRAN mirror
-downloads](https://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](https://cran.rstudio.com/package=mlsjunkgen)
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/mlsjunkgen)](https://cran.r-project.org/package=mlsjunkgen)
 <!-- badges: end -->
 
 ### Background
