@@ -3,7 +3,7 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   mlsjunkgen: mlsjunkgen.html
-last_built: 2021-05-02T00:45Z
+last_built: 2021-05-02T16:46Z
 urls:
   reference: http://stevemyles.site/mlsjunkgen//reference
   article: http://stevemyles.site/mlsjunkgen//articles
